@@ -1,21 +1,21 @@
 {
-  "name": "generator-simple-redux",
+  "name": "openwebnet-site",
   "version": "1.0.0",
-  "description": "My simple redux application.",
+  "description": "openwebnet-site",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
-    "dev": "NODE_ENV=development npm start",
+    "dev": "cross-env NODE_ENV=development npm start",
     "start": "node devServer.js",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tsaiDavid/simple-redux-boilerplate.git"
+    "url": "git+https://github.com/openwebnet/openwebnet-site.git"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/tsaiDavid/simple-redux-boilerplate",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "http://openwebnet.xyz",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.3.15",
