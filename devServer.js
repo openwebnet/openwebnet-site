@@ -1,4 +1,5 @@
 const path = require('path');
+const open = require('open');
 const express = require('express');
 const webpack = require('webpack');
 const config = require('./webpack.config.dev');
@@ -24,4 +25,5 @@ app.listen(3000, 'localhost', (err) => {
   }
 
   console.log('Listening at http://localhost:3000');
+  open('http://localhost:3000');
 });
