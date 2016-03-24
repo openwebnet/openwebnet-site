@@ -7,13 +7,11 @@
 # first time
 npm install
 
-# build and run
-npm run build
+# build and run (development)
 npm start
 
-# build and run (development)
-npm run dev
-
+# build dist
+npm run dist
 # publish gh-pages
 npm run publish
 ```
