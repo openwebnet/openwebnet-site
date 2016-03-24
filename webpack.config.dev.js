@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -10,8 +11,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'bundle.js'
   },
   plugins: [
     /**
@@ -33,6 +33,14 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
+    /**
+     * TODO
+     */
+    new HtmlWebpackPlugin({
+      title: 'OpenWebNet',
+      filename: 'index.html',
+      template: 'index.template.html'
+    })
   ],
   module: {
     loaders: [
