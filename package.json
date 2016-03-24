@@ -9,7 +9,8 @@
     "build": "npm run clean && npm run copy && npm run build:webpack",
     "dev": "cross-env NODE_ENV=development npm start",
     "start": "node devServer.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
