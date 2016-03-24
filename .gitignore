@@ -1,6 +1,11 @@
-node_modules
-*.log
+*~
 .DS_Store
-lib
-coverage
-dist
+
+npm-debug.log
+node_modules/
+coverage/
+
+.env
+
+*.iml
+.idea/
