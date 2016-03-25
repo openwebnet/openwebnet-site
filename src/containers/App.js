@@ -1,15 +1,13 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import {Home} from '../components';
+
+injectTapEventPlugin();
 
 export default class App extends Component {
   render() {
-    return (
-      <div className="app-container">
-        <div className="row center-xs">
-          <div className="col-xs-4">OpenWebNet</div>
-        </div>
-      </div>
-    );
+    return <Home />;
   }
 }
 

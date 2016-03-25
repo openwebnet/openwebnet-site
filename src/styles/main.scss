@@ -1,11 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
+@import "palette";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2 {
   font-weight: 300;
 }
 
 .app-container {
 
+  .top {
+    background-color: $primary-color;
+    color: white;
+    padding: 4em 0;
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .actions {
+    margin-top: 50px;
+  }
 }
