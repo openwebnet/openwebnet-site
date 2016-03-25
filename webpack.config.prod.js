@@ -35,12 +35,13 @@ module.exports = {
       }
     }),
     /**
-     * TODO
+     * TODO common
      */
     new HtmlWebpackPlugin({
       title: 'OpenWebNet',
       filename: 'index.html',
-      template: 'index.template.html'
+      template: 'index.template.html',
+      favicon: path.join(__dirname, 'dist/favicon.ico')
     })
   ],
   module: {
