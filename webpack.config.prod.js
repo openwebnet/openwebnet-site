@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,6 +11,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app-[hash].js'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css', '.scss', '.sass']
   },
   plugins: [
     /**
@@ -35,6 +39,10 @@ module.exports = {
       }
     }),
     /**
+     * TODO
+     */
+    new ExtractTextPlugin('app-[hash].css', {allChunks: true}),
+    /**
      * TODO common
      */
     new HtmlWebpackPlugin({
@@ -52,8 +60,16 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
+      },
+      {
+        test: /\.sass/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader?outputStyle=expanded&indentedSyntax')
+      },
+      {
         test: /\.scss$/,
-        loader: 'style!css!sass'
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader?outputStyle=expanded')
       }
     ]
   }

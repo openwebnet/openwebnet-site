@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // import stylesheet
+import 'flexboxgrid';
 import './styles/main.scss';
 
 import configureStore from './store/configureStore';

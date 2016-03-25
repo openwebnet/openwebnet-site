@@ -2,17 +2,15 @@ import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as CounterActions from '../actions/CounterActions';
-import Counter from '../components/Counter';
-import Footer from '../components/Footer';
 
 export default class App extends Component {
   render() {
     const {counter, actions} = this.props;
     return (
-      <div className="main-app-container">
-        <div className="main-app-nav">Simple Redux Boilerplate</div>
-        <Counter counter={counter} actions={actions}/>
-        <Footer />
+      <div className="app-container">
+        <div className="row center-xs">
+          <div className="col-xs-4">OpenWebNet</div>
+        </div>
       </div>
     );
   }

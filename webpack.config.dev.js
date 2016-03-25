@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -12,6 +13,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css', '.scss', '.sass']
   },
   plugins: [
     /**
@@ -52,8 +56,16 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
-        test: /\.scss$/,
-        loader: 'style!css!sass'
+        test: /\.css$/,
+        loader: 'style-loader!css-loader!postcss-loader'
+      },
+      {
+        test: /\.sass/,
+        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded&indentedSyntax'
+      },
+      {
+        test: /\.scss/,
+        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
       }
     ]
   }
