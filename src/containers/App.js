@@ -1,11 +1,8 @@
 import React, {Component, PropTypes} from 'react';
-import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import * as CounterActions from '../actions/CounterActions';
 
 export default class App extends Component {
   render() {
-    const {counter, actions} = this.props;
     return (
       <div className="app-container">
         <div className="row center-xs">
@@ -16,21 +13,14 @@ export default class App extends Component {
   }
 }
 
-App.propTypes = {
-  counter: PropTypes.number.isRequired,
-  actions: PropTypes.object.isRequired
-};
+App.propTypes = {};
 
 function mapStateToProps(state) {
-  return {
-    counter: state.counter
-  };
+  return {};
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(CounterActions, dispatch)
-  };
+  return {};
 }
 
 export default connect(
