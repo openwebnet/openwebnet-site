@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import AppBar from 'material-ui/lib/app-bar';
 import RaisedButton from 'material-ui/lib/raised-button';
 
+// TODO
 class Home extends Component {
   render() {
     return (
@@ -12,7 +13,7 @@ class Home extends Component {
             <h1>OpenWebNet</h1>
           </div>
           <div className="col-xs-10">
-            <h2>OpenWebNet is the BTicino protocol that let you manage your house from remote.</h2>
+            <h2>OpenWebNet is the protocol developed by BTicino that let you manage your house from remote</h2>
           </div>
         </div>
         <div className="row center-xs actions">
