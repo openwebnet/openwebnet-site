@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
-@import "palette";
+//@import "palette";
+$grey-light: #F5F5F5;
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -9,6 +10,7 @@ html {
 body {
   margin: 0;
   font-weight: 300;
+  background-color: $grey-light;
 }
 
 h1, h2 {
@@ -18,8 +20,8 @@ h1, h2 {
 .app-container {
 
   .top {
-    background-color: $primary-color;
-    color: white;
+    background-color: #FF6E40;
+    color: $grey-light;
     padding: 4em 0;
     h1 {
       font-size: 3em;

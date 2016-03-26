@@ -1,5 +1,5 @@
 export default {
-  primaryColorDark: '#F57C00',
-  primaryColor: '#FF9800',
-  accent: '#FF5722'
+  primaryColorDark: '#FF5722',
+  primaryColor: '#FF6E40',
+  accent: '#78909C'
 };
