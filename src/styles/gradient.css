@@ -1,0 +1,11 @@
+/* http://www.cssmatic.com/gradient-generator */
+.orange-gradient {
+  background: #ff9800;/* Old Browsers */
+  background: -moz-linear-gradient(top, #ff9800 0%, #ffc107 100%); /* FF3.6+ */
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff9800), color-stop(100%, #ffc107));/* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(top, #ff9800 0%, #ffc107 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ff9800 0%, #ffc107 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ff9800 0%, #ffc107 100%); /* IE 10+ */
+  background: linear-gradient(to bottom, #ff9800 0%, #ffc107 100%);/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9800', endColorstr='#ffc107', GradientType=0 );/* IE6-9 */
+}

@@ -1,14 +1,13 @@
 import React, {Component, PropTypes} from 'react';
-import AppBar from 'material-ui/lib/app-bar';
+
 import RaisedButton from 'material-ui/lib/raised-button';
 
-// TODO
+// TODO i18n
 class Home extends Component {
   render() {
     return (
-      <div className="app-container">
-        <AppBar showMenuIconButton={false} />
-        <div className="row middle-xs center-xs top">
+      <div className="home-container">
+        <div className="row middle-xs center-xs top orange-gradient">
           <div className="col-xs-12">
             <h1>OpenWebNet</h1>
           </div>
@@ -21,13 +20,13 @@ class Home extends Component {
             <RaisedButton
               label="google play"
               primary={true}
-              fullWidth={true} />
+              fullWidth={true}/>
           </div>
           <div className="col-sm-2">
             <RaisedButton
               label="github"
               primary={true}
-              fullWidth={true} />
+              fullWidth={true}/>
           </div>
         </div>
       </div>

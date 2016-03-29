@@ -1,33 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 //@import "palette";
-$grey-light: #F5F5F5;
+$grey-100: #F5F5F5;
 
 html {
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
 }
+
 body {
   margin: 0;
   font-weight: 300;
-  background-color: $grey-light;
+  background-color: $grey-100;
 }
 
 h1, h2 {
   font-weight: 300;
 }
 
-.app-container {
-
+.home-container {
   .top {
-    background-color: #FF6E40;
-    color: $grey-light;
+    color: $grey-100;
     padding: 4em 0;
     h1 {
       font-size: 3em;
     }
   }
-
   .actions {
     margin-top: 50px;
   }
