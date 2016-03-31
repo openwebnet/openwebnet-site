@@ -70,6 +70,10 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader?outputStyle=expanded')
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'url-loader?limit=8192'
       }
     ]
   }

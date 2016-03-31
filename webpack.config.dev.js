@@ -48,6 +48,7 @@ module.exports = {
     })
   ],
   module: {
+    // use ! to chain loaders
     loaders: [
       {
         test: /\.(js|jsx)$/,
@@ -66,6 +67,11 @@ module.exports = {
       {
         test: /\.scss/,
         loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
+      },
+      // inline base64 URLs for <=8k images, direct URLs for the rest
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'url-loader?limit=8192'
       }
     ]
   }
