@@ -11,7 +11,7 @@ class Home extends Component {
             <h1>OpenWebNet</h1>
           </div>
           <div className="col-xs-10">
-            <h2>OpenWebNet is the protocol developed by BTicino that let you manage your house remotely</h2>
+            <h2>OpenWebNet is the protocol developed by BTicino that let you manage your home automation system remotely</h2>
           </div>
         </div>
         <Actions />
