@@ -1,6 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-
-import RaisedButton from 'material-ui/lib/raised-button';
+import Actions from './Actions';
 
 // TODO i18n
 class Home extends Component {
@@ -12,23 +11,10 @@ class Home extends Component {
             <h1>OpenWebNet</h1>
           </div>
           <div className="col-xs-10">
-            <h2>OpenWebNet is the protocol developed by BTicino that let you manage your house from remote</h2>
+            <h2>OpenWebNet is the protocol developed by BTicino that let you manage your house remotely</h2>
           </div>
         </div>
-        <div className="row center-xs actions">
-          <div className="col-sm-2">
-            <RaisedButton
-              label="google play"
-              primary={true}
-              fullWidth={true}/>
-          </div>
-          <div className="col-sm-2">
-            <RaisedButton
-              label="github"
-              primary={true}
-              fullWidth={true}/>
-          </div>
-        </div>
+        <Actions />
       </div>
     );
   }
