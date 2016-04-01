@@ -27,14 +27,18 @@ export default class Actions extends Component {
             label="google play"
             primary={true}
             fullWidth={true}
-            icon={<GooglePlayIcon />}/>
+            icon={<GooglePlayIcon />}
+            linkButton={true}
+            href="https://play.google.com/store/apps/details?id=com.github.openwebnet"/>
         </div>
         <div className="col-xs-8 col-sm-4 col-md-2 action">
           <RaisedButton
             label="github"
             primary={true}
             fullWidth={true}
-            icon={<GitHubCircleIcon />}/>
+            icon={<GitHubCircleIcon />}
+            linkButton={true}
+            href="https://github.com/openwebnet"/>
         </div>
       </div>
     );
