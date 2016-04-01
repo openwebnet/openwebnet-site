@@ -1,7 +1,5 @@
 # openwebnet-site
 
-> work in progress!
-
 ### Run
 ```
 # first time
