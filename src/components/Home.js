@@ -23,4 +23,3 @@ class Home extends Component {
 Home.propTypes = {};
 
 export default Home;
-
