@@ -1,15 +1,13 @@
 # openwebnet-site
 
-### Run
+#### Setup
+`npm install`
+
+#### Build and run in development
+`npm start`
+
+#### Build and publish gh-pages
 ```
-# first time
-npm install
-
-# build and run (development)
-npm start
-
-# build dist
 npm run dist
-# publish gh-pages
 npm run publish
 ```
