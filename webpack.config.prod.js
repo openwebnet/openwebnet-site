@@ -46,7 +46,7 @@ module.exports = {
      * TODO common
      */
     new HtmlWebpackPlugin({
-      title: 'OpenWebNet',
+      title: 'MyOpenWebNet',
       filename: 'index.html',
       template: 'index.template.html',
       favicon: path.join(__dirname, 'dist/favicon.ico')
