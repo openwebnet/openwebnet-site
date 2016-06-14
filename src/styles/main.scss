@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
-//@import "palette";
+@import "palette";
 $grey-100: #F5F5F5;
 
 html {
@@ -28,10 +28,23 @@ h1, h2 {
   }
   .actions {
     margin-top: 3em;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 
     .action {
       margin-top: 1em;
+    }
+  }
+  .cookie-policy {
+    text-align: center;
+
+    .cookie-link {
+      color: $primary-color-dark;
+      cursor: pointer;
+    }
+    div:first-child {
+      padding: 12px 24px;
+      height: auto !important;
+      line-height: normal !important;
     }
   }
 }

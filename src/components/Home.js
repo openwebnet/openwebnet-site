@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Actions from './Actions';
+import CookiePolicy from './CookiePolicy';
 
 // TODO i18n
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
           </div>
         </div>
         <Actions />
+        <CookiePolicy />
       </div>
     );
   }
