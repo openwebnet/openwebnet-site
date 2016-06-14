@@ -44,8 +44,6 @@ class CookiePolicy extends Component {
           className="cookie-policy"
           open={true && !this.state.open}
           message={message}
-          autoHideDuration={5000}
-          onRequestClose={this.handleClose}
         />
         <Dialog
           bodyClassName="cookie-dialog"
