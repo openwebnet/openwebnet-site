@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
-
 @import "palette";
+
 $grey-100: #F5F5F5;
 
 html {
@@ -47,4 +47,7 @@ h1, h2 {
       line-height: normal !important;
     }
   }
+}
+.cookie-dialog {
+  overflow: auto !important;
 }
