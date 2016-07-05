@@ -2,6 +2,16 @@
   "name": "openwebnet-site",
   "version": "1.0.0",
   "description": "openwebnet-site",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "http://openwebnet.xyz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openwebnet/openwebnet-site.git"
+  },
+  "engines": {
+    "node": "6.2.x",
+    "npm": "3.9.x"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "copy": "copyfiles -f CNAME favicon.ico ./dist",
@@ -11,12 +21,6 @@
     "start": "npm run build -- webpack.config.dev.js && node devServer.js",
     "publish": "git subtree push --prefix dist origin gh-pages"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/openwebnet/openwebnet-site.git"
-  },
-  "license": "CC-BY-SA-4.0",
-  "homepage": "http://openwebnet.xyz",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.3.15",
