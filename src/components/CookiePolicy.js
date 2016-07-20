@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import Snackbar from 'material-ui/lib/Snackbar';
+import Snackbar from 'material-ui/lib/snackbar';
 import Dialog from 'material-ui/lib/dialog';
 import FlatButton from 'material-ui/lib/flat-button';
 
