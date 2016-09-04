@@ -49,7 +49,7 @@ export default class Actions extends Component {
         </div>
         <div className="col-xs-8 col-sm-4 col-md-2 action">
           <RaisedButton
-            label="api"
+            label="javadoc"
             primary={true}
             fullWidth={true}
             icon={<JavaDocIcon />}
