@@ -2,7 +2,7 @@
   "name": "openwebnet-site",
   "version": "1.0.0",
   "description": "openwebnet-site",
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "homepage": "http://openwebnet.xyz",
   "repository": {
     "type": "git",
